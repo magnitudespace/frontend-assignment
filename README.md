@@ -16,4 +16,14 @@ We also believe in documenting our code properly, this project is not an excepti
 * `tasks` contains the tasks you need to complete
 * `test` contains the test modules to verify the tasks work. You can ignore this.
 
-Credit: Strong influence taken from [js-assignments](https://github.com/rolling-scopes-school/js-assignments).
+### Expectations
+I don't want you to spend hours and hours on these assignments, and it's purely to help us understand where you are technically and how you think. The requirements below are guidelines. Nothing has to be fully complete or totally working for us to make an offer, even leaving a comment saying how you'd approach a problem is great.
+
+* `Interns`: `tasks/web` and `tasks/01` are "must submit". Anything else is a bonus.
+* `Junior`: `tasks/web` and `tasks/01`, `tasks/02` are "must submit".
+* `Medior`: `tasks/web` and `tasks/01`, `tasks/02` and one of `03`, `04`, or `05` are "must submit".
+* `Senior`: `tasks/web` and `03`, `04`, and `05` are "must submit". Explanations into the methods and clear documentation are highly valued. You'd be expected to coach more junior team members.
+
+**NOTE: Doing something above the job level you're applying for doesn't guarantee we'll place you at that level or make you an offer for a job at that level**
+
+_Credit: Strong influence taken from [js-assignments](https://github.com/rolling-scopes-school/js-assignments)._
