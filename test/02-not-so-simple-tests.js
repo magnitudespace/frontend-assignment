@@ -98,7 +98,7 @@ describe('02-not-so-simple-tasks', function() {
         { num: 34143, expected :34143 }
     ].forEach(data => {
         var actual = tasks.reverseInteger(data.num);
-        assert.equal(
+        assert.strictEqual(
             actual,
             data.expected,
             `Reversed ${data.num} = ${data.expected}, but actual ${actual}`
