@@ -1,0 +1,26 @@
+/* Modular typography: 
+.t1 - largest font-size.
+.t2 - second largest font-size
+...
+.s1 - first font-size smaller that base font-size.
+.s2 - second font-size smaller that base font-size.
+...
+*/
+
+.t2 {
+  @include h4($b-l-h, $type-scale);
+}
+
+.s1 {
+  @include s1($b-l-h, $type-scale);
+
+  &--spaced {
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .t2 {
+    @include h3($b-l-h, $type-scale);
+  }
+}

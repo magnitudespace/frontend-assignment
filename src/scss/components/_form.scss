@@ -1,0 +1,71 @@
+.c-form {
+  display: block;
+}
+
+.l-form {
+  display: grid;
+
+  &__textarea {
+    margin-bottom: 20px;
+  }
+}
+
+.l-form-inner {
+  // IE-compatible component-level grid layout
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  &__input1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  &__input2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  &__input3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .l-form {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'textarea inputs' 'textarea btn';
+
+    &__inputs {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: inputs;
+    }
+
+    &__textarea {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 1;
+      grid-area: textarea;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      -ms-grid-row: 2;
+      -ms-grid-column: 2;
+      grid-area: btn;
+    }
+  }
+}

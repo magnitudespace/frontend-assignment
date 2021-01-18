@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Assignment - Agnieszka Labonarska</title>
+    <meta charset="UTF-8" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="author" content="Agnieszka Labonarska" />
+    <meta name="description" content="Front-end assignment for Hiber" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/index.min.css" />
+  </head>
+  <body>
+    <section class="c-section c-section--color l-section">
+      <div class="l-section__content">
+
+        <header class="c-header">
+          <div class="l-header">
+          <h2 class="l-header__heading t2">Got a question? Ask away.</h2>
+          <p class="l-header__caption s1 s1--spaced">WE'RE ALWAYS READY TO HELP</p>
+        </div>
+        </header>
+        <p class="u-center">
+          Send us a message and we’ll get back to you within 24 hours. If not
+          sooner.</p>
+          <div class="l-wrapper">
+        <form class="c-form" name="contact-form">
+          <div class="l-form">
+            <div class="l-form__inputs">
+              <div class="l-form-inner">
+                <div class="l-form-inner__input1">
+                  <label for="first-name" class="h-offscreen">First name</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder="First name *"
+                    size="30"
+                    maxlength="100"
+                    required
+                  />
+                </div>
+                <div class="l-form-inner__input2">
+                  <!-- W3 Accessibility standard requires hidden labels 
+                    when placeholders are used to describe input fields -->
+                  <label for="last-name" class="h-offscreen">Last name</label>
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder="Last name *"
+                    size="30"
+                    maxlength="100"
+                    required
+                  />
+                </div>
+
+                <div class="l-form-inner__input3">
+                  <label for="email" class="h-offscreen"
+                    >Your email address</label
+                  >
+
+                  <input
+                    placeholder="Your email address *"
+                    type="email"
+                    name="email"
+                    id="email"
+                    size="30"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="l-form__textarea">
+              <label for="message" class="h-offscreen"
+                >What do you want to know?</label
+              >
+              <!-- Note: I would consult on the maximum length of the message with the team -->
+              <textarea
+                class="o-textarea"
+                placeholder="What do you want to know? *"
+                name="message"
+                id="message"
+                rows="5"
+                cols="40"
+                minlength="2"
+                maxlength="3000"
+                required
+              ></textarea>
+            </div>
+            <div class="l-form__btn">
+              <button type="submit" class="o-btn o-btn--wide s1">
+                SEND YOUR QUESTION
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
+    <section class="c-section l-section">
+      <div class="l-section__content">
+        <header class="c-header c-header--center">
+          <div class="l-header">
+          <h2 class="l-header__heading t2">Find your answer here.</h2>
+          <p class="l-header__caption s1 s1--spaced">FAQS</p>
+        </header>
+
+        <div class="l-wrapper">
+        <details class="c-faq">
+          <summary class="c-faq__summary l-faq s1 s1--spaced">
+            <span class="o-icon"
+              ><img class="o-icon__img" src="/src/assets/plus.svg" alt="" /></span
+            ><span class="c-faq__q l-faq__q">WHAT IS HIBERBAND?</span>
+          </summary>
+          <!-- <p>The answer would go here... </p> -->
+        </details>
+        <hr class="o-ruler" />
+
+        <details class="c-faq">
+          <summary class="c-faq__summary l-faq s1 s1--spaced">
+            <span class="o-icon"
+              ><img class="o-icon__img" src="/src/assets/plus.svg" alt=""
+            /></span>
+            <span class="c-faq__q l-faq__q"
+              >DOES HIBER HAVE ITS OWN SATELLITE CONSTELLATION?</span
+            >
+          </summary>
+          <!-- <p>The answer would go here... </p> -->
+        </details>
+        <hr class="o-ruler" />
+        <details class="c-faq">
+          <summary class="c-faq__summary l-faq s1 s1--spaced">
+            <span class="o-icon"
+              ><img class="o-icon__img" src="/src/assets/plus.svg" alt="" /></span
+            ><span class="c-faq__q l-faq__q"
+              >WHAT DOES THE SERVICE COST?</span
+            >
+          </summary>
+          <!-- <p>The answer would go here...</p> -->
+        </details>
+      </div>
+        <div class="u-center">
+          <button type="button" class="o-btn o-btn--flex s1">
+            READ ALL FAQS
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>

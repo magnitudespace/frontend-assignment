@@ -1,0 +1,27 @@
+.c-section {
+  padding: 30px;
+  &--color {
+    background: $foam;
+  }
+}
+
+.l-section {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+
+  &__content {
+    margin: auto;
+    // Fallback for vertical centering with auto margins
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .l-section__content {
+    width: 800px;
+    // Fallback for vertical centering with auto margins
+    padding: 100px 0;
+  }
+}

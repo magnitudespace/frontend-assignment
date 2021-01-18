@@ -1,0 +1,36 @@
+/*
+The architecture here is based on a variant of BEM methodology with namespaces, 
+inspired by Zell Liew - more information can be found here: https://zellwk.com/blog/css-architecture-2/
+This architecture worked for me very well on multiple projects, but please note that I am happy to 
+employ any other method of organising SCSS. 
+*/
+
+// Libraries
+@import './lib/normalize';
+
+// Variables
+@import './variables/index';
+
+// Helpers (mixins etc)
+@import './helpers/index';
+
+// Reset
+@import './reset';
+
+// Base
+@import './base';
+
+// Global layouts with l-
+@import './layout';
+
+/* Objects with o- including typography with t- and s-
+ (The smallest, context-independent building blocks of the website, akin to atoms in Atomic Design)
+ Occasionally can omit the o-prefix (e.g. in the case of inputs) */
+@import './objects/index';
+
+// Components with c- including component-level layouts with l- (separation of skin and structure)
+@import './components/index';
+
+// Utility: helper classes that override other styles with an !important declaration
+// Can only modify one property. Particularly useful in the case of text-align.
+@import './utility';

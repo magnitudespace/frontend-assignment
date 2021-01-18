@@ -1,0 +1,45 @@
+@mixin input {
+  display: block;
+  width: 100%;
+  line-height: inherit;
+  font-family: $font-stack-regular;
+  font-size: 90%;
+  padding: 12px 16px;
+  border: 1px solid $geyser;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: $oslo-gray;
+    opacity: 1; // fix opacity in Firefox
+  }
+  // IE10-11
+  &:-ms-input-placeholder {
+    color: $oslo-gray;
+  }
+  // Edge
+  &::-ms-input-placeholder {
+    color: $oslo-gray;
+  }
+
+  &:focus {
+    -webkit-box-shadow: 0 0 6px $powder-blue inset;
+    box-shadow: 0 0 6px $powder-blue inset;
+    outline: none;
+  }
+}
+
+input[type='text'],
+input[type='email'] {
+  @include input;
+}
+
+.o-textarea {
+  @include input;
+  resize: none;
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .o-textarea {
+    height: 100%;
+  }
+}
