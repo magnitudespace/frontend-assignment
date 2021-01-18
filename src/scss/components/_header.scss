@@ -1,0 +1,33 @@
+.c-header {
+  display: block;
+  font-family: $font-stack-bold;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.l-header {
+  // IE-compatible component-level grid
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-areas: 'intro' 'heading';
+
+  &__heading {
+    -ms-grid-row: 2;
+    grid-area: heading;
+    padding: 10px 0;
+  }
+
+  &__caption {
+    -ms-grid-row: 1;
+    grid-area: intro;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .c-header {
+    text-align: center;
+  }
+}

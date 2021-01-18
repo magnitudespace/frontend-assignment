@@ -1,0 +1,33 @@
+.c-faq {
+  padding: 30px 0;
+  &__summary {
+    // Hide the details marker
+    list-style-type: none;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__q {
+    display: inline-block;
+    font-family: $font-stack-bold;
+    padding: 10px;
+  }
+}
+
+.l-faq {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  &__q {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .l-faq__q {
+    margin-left: 60px;
+  }
+}

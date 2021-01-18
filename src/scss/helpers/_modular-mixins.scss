@@ -1,0 +1,17 @@
+@mixin h3($b-l-h, $type-scale) {
+  $h3: 1rem * ($type-scale * $type-scale * $type-scale);
+  font-size: $h3;
+  line-height: ceil($h3 / $b-l-h) * ($b-l-h / $h3);
+}
+
+@mixin h4($b-l-h, $type-scale) {
+  $h4: 1rem * ($type-scale * $type-scale);
+  font-size: $h4;
+  line-height: ceil($h4 / $b-l-h) * ($b-l-h / $h4);
+}
+
+@mixin s1($b-l-h, $type-scale) {
+  $s1: 1rem / $type-scale;
+  font-size: $s1;
+  line-height: ceil($s1 / $b-l-h) * ($b-l-h / $s1);
+}

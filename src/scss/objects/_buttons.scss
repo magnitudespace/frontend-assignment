@@ -1,0 +1,31 @@
+.o-btn {
+  display: inline-block;
+  padding: 14px 16px;
+  background: $carnation;
+  font-family: $font-stack-bold;
+  color: $white;
+  border: 1px solid $carnation;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--wide {
+    width: 100%;
+  }
+  &--flex {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    background: $mandys-pink;
+    color: $carnation;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .o-btn--flex {
+    width: 150px; // fallback for IE
+    width: max-content;
+  }
+}

@@ -1,0 +1,7 @@
+.o-ruler {
+  height: 1px;
+  border: none;
+  background-image: linear-gradient(to left, $white, $hit-gray, $white);
+  // fallback
+  background-color: $hit-gray;
+}

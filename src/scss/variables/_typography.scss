@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Europa Bold';
+  src: url('/src/assets/fonts/Europa-Bold.otf') format('otf'),
+    url('/src/assets/fonts/Europa-Bold.ttf') format('tff'),
+    url('/src/assets/fonts/Europa-Bold.woff') format('woff'),
+    url('/src/assets/fonts/Europa-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Europa Light';
+  src: url('/src/assets/fonts/Europa-Light.otf') format('otf'),
+    url('/src/assets/fonts/Europa-Light.ttf') format('tff'),
+    url('/src/assets/fonts/Europa-Light.woff') format('woff'),
+    url('/src/assets/fonts/Europa-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Europa Regular';
+  src: url('/src/assets/fonts/Europa-Regular.otf') format('otf'),
+    url('/src/assets/fonts/Europa-Regular.ttf') format('tff'),
+    url('/src/assets/fonts/Europa-Regular.woff') format('woff'),
+    url('/src/assets/fonts/Europa-Regular.woff2') format('woff2');
+}
+
+// Fonts
+$font-stack-bold: 'Europa Bold', sans-serif;
+$font-stack-regular: 'Europa Regular', sans-serif;
+$font-stack-light: 'Europa Light', sans-serif;
+$b-l-h: 1.2; // baseline line-height
+$type-scale: 1.25; // modular scale ratio
