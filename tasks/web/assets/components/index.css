@@ -1,0 +1,65 @@
+@import url('forms.css');
+@import url('faqs.css');
+@import url('buttons.css');
+
+
+body {
+  margin: 0px;
+}
+
+.blue-container, .regular-container {
+  margin: 0 auto;
+  padding: 137px 0;
+  display: grid;
+}
+
+.blue-container {
+  background-color: #e9faff;
+}
+
+.regular-container {
+  background-color: #fff;
+}
+
+h1, h2, p, textarea, input, a {
+  margin: 0;
+  font-family: 'Europa';
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: black;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+h2 {
+  font-size: 0.7rem;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 100;
+  padding-top: 15px;
+}
+
+textarea, a {
+  resize: none;
+  font-size: .8rem;
+  color: gray;
+  font-weight: 100;
+  padding: 17px 0px 0px 10px;
+  opacity: 0.8;
+}
+
+.centered-content {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}

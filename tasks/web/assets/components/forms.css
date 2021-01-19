@@ -1,0 +1,45 @@
+.centered-form {
+  margin: 0 auto;
+  display: flex;
+  height: 183px;
+}
+
+.right-form {
+  width: 350px;
+}
+
+.left-form {
+  width: 350px;
+  margin-left: 25px;
+}
+
+.left-form-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-bar {
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  color: gray;
+  width: 100%;
+}
+
+.form-bar-large {
+  width: 100%;
+  height: 165px;
+  margin-right: 10px;
+}
+
+.form-bar-small, .form-bar-md {
+  height: 35px;
+  margin: 0px 0px 7px 0px;
+}
+
+.form-bar-small:first-child {
+  margin-right: 7px;
+}
+
+.form-bar-md, {
+  width: -webkit-fill-available;
+}

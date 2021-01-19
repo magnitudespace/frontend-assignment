@@ -12,7 +12,8 @@
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 const getStringFromTemplate = (firstName, lastName) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  return `Hello, ${firstName} ${lastName}!`;
 };
 
 /**
@@ -27,7 +28,8 @@ const getStringFromTemplate = (firstName, lastName) => {
  *   '\tHello, World! ' => 'Hello, World!'
  */
 const removeLeadingAndTrailingWhitespaces = (value) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  return value.trim();
 };
 
 /**
@@ -42,7 +44,8 @@ const removeLeadingAndTrailingWhitespaces = (value) => {
 *   'cat', 3 => 'catcatcat'
 */
 const repeatString = (value, count) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  return value.repeat(count);
 };
 
 /**
@@ -70,7 +73,12 @@ const repeatString = (value, count) => {
  *   'K♠' => 51
  */
 const getCardId = (value) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  const deck = ['A♣','2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣',
+                'A♦','2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦',
+                'A♥','2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','J♥','Q♥','K♥',
+                'A♠','2♠','3♠','4♠','5♠','6♠','7♠','8♠','9♠','10♠','J♠','Q♠','K♠']
+  return deck.indexOf(value);
 };
 
 /**
@@ -89,7 +97,10 @@ const getCardId = (value) => {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 const getDistanceBetweenPoints = (x1, y1, x2, y2) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  let s1 = x1 - x2;
+  let s2 = y1 - y2;
+  return Math.sqrt( s1*s1 + s2*s2 );
 };
 
 /**
@@ -105,7 +116,8 @@ const getDistanceBetweenPoints = (x1, y1, x2, y2) => {
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 const findElement = (arr, value) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  return arr.indexOf(value);
 };
 
 /**
@@ -120,7 +132,9 @@ const findElement = (arr, value) => {
  *    [] => []
  */
 const getArrayOfPositives = (arr) => {
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
+  const result = arr.filter(item => item > 0);
+  return result;
 };
 
 module.exports = {

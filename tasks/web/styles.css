@@ -1,0 +1,13 @@
+
+@import url('assets/components/index.css');
+
+
+@font-face {
+  font-family: 'Europa';
+  src: url('assets/fonts/Europa-Bold.ttf') format('truetype');
+  src: url('assets/fonts/Europa-BoldItalic.ttf') format('truetype');
+  src: url('assets/fonts/Europa-Italic.ttf') format('truetype');
+  src: url('assets/fonts/Europa-Light.ttf') format('truetype');
+  src: url('assets/fonts/Europa-LightItalic.ttf') format('truetype');
+  src: url('assets/fonts/Europa-Regular.ttf') format('truetype');
+}

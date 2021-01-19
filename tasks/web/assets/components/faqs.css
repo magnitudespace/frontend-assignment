@@ -1,0 +1,37 @@
+.faq-container-centered {
+  margin: 0 200px;
+}
+
+.faq-button-centered {
+  margin: 0 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-card {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-image-source: radial-gradient(#020202 0%, transparent 100%);
+  border-image-slice: 3;
+  padding: 33px 5px;
+}
+
+.faq-card:last-child {
+  border: none;
+}
+
+.faq-card-plus {
+  margin-right: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,.1);
+  padding: 13px;
+  transition: transform .7s;
+}
+
+.faq-card-plus:hover {
+  transform: rotate(360deg);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,.1);
+  cursor: pointer;
+}

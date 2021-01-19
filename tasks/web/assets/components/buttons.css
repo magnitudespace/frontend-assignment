@@ -1,0 +1,32 @@
+.form-bar-button {
+  height: 35px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-top: 4px;
+  width: -webkit-fill-available;
+  text-transform: uppercase;
+}
+
+.form-bar-button:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.faq-button {
+  border-radius: 4px;
+  background-color: red;
+  color:  white;
+  text-align: center;
+  padding: 15px 13px;
+  margin-top: 30px;
+  transition: opacity .5s;
+  text-transform: uppercase;
+}
+
+.faq-button:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
