@@ -28,7 +28,7 @@ Please do *not* use any component libraries.
 - *Optionally*; any other interesting functionality
 
 ### Output
-Commit your code to a GitHub repo and share the repo with me. (GitHub username is `nothingrandom`).
+Commit your code to a GitHub repo and share the repo with us.
 Bonus; add it to a CI/CD tool like Netlify and add the link to your repo.
 
 Thanks. Best of luck!
